@@ -6,7 +6,7 @@ last_modified_at: 2018-03-19T16:28:04-05:00
 toc: false
 ---
 
-You can fine the example [here](https://github.com/XaBerr/JATE/tree/master/examples/01essential).
+You can fine the example [here](https://github.com/XaBerr/jate-docs/tree/master/examples/01essential).
 
 ### CLI (Recommended)
 1. Install [npm](https://www.npmjs.com/)

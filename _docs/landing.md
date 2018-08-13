@@ -7,12 +7,12 @@ toc: false
 ---
 Just Another Template Engine<br>
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/XaBerr/JATE/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/XaBerr/JATE/?branch=master)
-[![Code Climate](https://codeclimate.com/github/XaBerr/JATE/badges/gpa.svg)](https://codeclimate.com/github/XaBerr/JATE)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/XaBerr/jate-docs/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/XaBerr/jate-docs/?branch=master)
+[![Code Climate](https://codeclimate.com/github/XaBerr/jate-docs/badges/gpa.svg)](https://codeclimate.com/github/XaBerr/JATE)
 [![Build Status](https://travis-ci.org/XaBerr/JATE.svg?branch=master)](https://travis-ci.org/XaBerr/JATE)
 <br>
-[![Latest Unstable Version](https://poser.pugx.org/xaberr/jate/v/unstable)](https://packagist.org/packages/xaberr/jate)
-[![License](https://poser.pugx.org/xaberr/jate/license)](https://packagist.org/packages/xaberr/jate)
+[![Latest Unstable Version](https://poser.pugx.org/xaberr/jate-docs/v/unstable)](https://packagist.org/packages/xaberr/jate)
+[![License](https://poser.pugx.org/xaberr/jate-docs/license)](https://packagist.org/packages/xaberr/jate)
 [![This is a forkable respository](https://img.shields.io/badge/forkable-yes-brightgreen.svg)](https://basicallydan.github.io/forkability/?u=XaBerr&r=JATE&l=PHP)
 
 ## WHAT IS JATE?

@@ -36,4 +36,4 @@ composer require xaberr/jate:dev-master
 npm install jate-framework
 ```
 ###### MANUAL
-Download and uncompress [zip](https://github.com/XaBerr/JATE/archive/master.zip) file from GitHub.
+Download and uncompress [zip](https://github.com/XaBerr/jate-docs/archive/master.zip) file from GitHub.
