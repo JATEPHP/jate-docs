@@ -10,8 +10,8 @@ title_separator          : "-"
 name                     : &name "XaBerr" # &name is a YAML anchor which can be *referenced later
 description              : &description "PHP Framework named JATE (Just Another Template Engine)"
 url                      : https://xaberr.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/JATE" # the subpath of your site, e.g. "/blog"
-repository               : "XaBerr/JATE"
+baseurl                  : "/jate-docs" # the subpath of your site, e.g. "/blog"
+repository               : "XaBerr/jate-docs"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
