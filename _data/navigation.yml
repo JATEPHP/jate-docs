@@ -55,6 +55,24 @@ docs:
     children:
       - title: "List"
         url: /html-class/list
+      - title: "init"
+        url: /html-class/init
+      - title: "draw"
+        url: /html-class/draw
+      - title: "addFiles"
+        url: /html-class/addFiles
+      - title: "addFilesRequired"
+        url: /html-class/addFilesRequired
+      - title: "addConnection"
+        url: /html-class/addConnection
+      - title: "query"
+        url: /html-class/query
+      - title: "queryFetch"
+        url: /html-class/queryFetch
+      - title: "queryArray"
+        url: /html-class/queryArray
+      - title: "queryInsert"
+        url: /html-class/queryInsert
   - title: Examples
     children:
       - title: "01 Essential"

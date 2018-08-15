@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>JATE Introduction - JATE</title>
-<meta name="description" content="Main information for jate.">
+<!-- begin _includes/seo.html --><title>query - JATE</title>
+<meta name="description" content="query.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="<img src='/jate-docs/img/favicon.png' class='brand'>JATE">
-<meta property="og:title" content="JATE Introduction">
-<meta property="og:url" content="http://localhost:4000/jate-docs/">
+<meta property="og:title" content="query">
+<meta property="og:url" content="http://localhost:4000/jate-docs/html-class/query">
 
 
-  <meta property="og:description" content="Main information for jate.">
+  <meta property="og:description" content="query.">
 
 
 
@@ -33,12 +33,12 @@
 
 
 
-  <meta property="article:modified_time" content="2018-03-19T17:28:04-04:00">
+  <meta property="article:modified_time" content="2018-08-15T17:28:04-04:00">
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/jate-docs/">
+<link rel="canonical" href="http://localhost:4000/jate-docs/html-class/query">
 
 
 
@@ -409,7 +409,7 @@
             
             
 
-            <li><a href="http://localhost:4000/jate-docs/html-class/query" class="">query</a></li>
+            <li><a href="http://localhost:4000/jate-docs/html-class/query" class="active">query</a></li>
           
             
             
@@ -511,15 +511,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="JATE Introduction">
-    <meta itemprop="description" content="Main information for jate.">
+    <meta itemprop="headline" content="query">
+    <meta itemprop="description" content="query.">
     <meta itemprop="datePublished" content="August 15, 2018">
-    <meta itemprop="dateModified" content="March 19, 2018">
+    <meta itemprop="dateModified" content="August 15, 2018">
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">JATE Introduction
+          <h1 class="page__title" itemprop="headline">query
 </h1>
           
         </header>
@@ -527,36 +527,22 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Just Another Template Engine<br /></p>
+        <p>It makes a request to the database by the connection set in the <em>config.json</em> file.<br />
+Before doing the queries you must be sure that you have ever made the connection through the <code class="highlighter-rouge">$this-&gt;addConnection("config/connection.json");</code> command and have enabled the connection inside the <em>config.json</em> file.<br /></p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">query</span> <span class="o">(</span> <span class="n">String</span> <span class="n">$_query</span> <span class="o">)</span>
+</code></pre></div></div>
 
-<p><a href="https://scrutinizer-ci.com/g/XaBerr/JATE/?branch=master"><img src="https://scrutinizer-ci.com/g/XaBerr/JATE/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality" /></a>
-<a href="https://codeclimate.com/github/XaBerr/JATE"><img src="https://codeclimate.com/github/XaBerr/JATE/badges/gpa.svg" alt="Code Climate" /></a>
-<a href="https://travis-ci.org/XaBerr/JATE"><img src="https://travis-ci.org/XaBerr/JATE.svg?branch=master" alt="Build Status" /></a>
-<br />
-<a href="https://packagist.org/packages/xaberr/jate"><img src="https://poser.pugx.org/xaberr/JATE/v/unstable" alt="Latest Unstable Version" /></a>
-<a href="https://packagist.org/packages/xaberr/jate"><img src="https://poser.pugx.org/xaberr/JATE/license" alt="License" /></a>
-<a href="https://basicallydan.github.io/forkability/?u=XaBerr&amp;r=JATE&amp;l=PHP"><img src="https://img.shields.io/badge/forkable-yes-brightgreen.svg" alt="This is a forkable respository" /></a></p>
+<h2 id="parameters">Parameters</h2>
+<p>Query string.</p>
 
-<h2 id="what-is-jate">WHAT IS JATE?</h2>
-<p>JATE is a new light and hackable framework for PHP.<br />
-It’s simple to learn and simple to customize.<br />
-JATE contains the minimum of libraries and functions to get you started.<br />
-Recommend the use of Bootstrap4, all examples use it.<br /></p>
-<h2 id="feautures">FEAUTURES</h2>
-<ul>
-  <li>Thought to write less code</li>
-  <li>Designed to focus only on the frontend</li>
-  <li>Standalone code</li>
-  <li>Object-oriented architecture</li>
-  <li>Reusable code between projects through the management modules</li>
-  <li>Write pages in <a href="http://www.jade-lang.com">PUG</a> (ex JADE)</li>
-  <li>Write pages in <a href="http://parsedown.org/">MARKDOWN</a>.</li>
-  <li>Write pages in <a href="http://twig.sensiolabs.org/">TWIG</a>.</li>
-  <li>Include files dynamically with <code class="highlighter-rouge">jRequire("relativePath")</code></li>
-</ul>
+<h2 id="return-values">Return Values</h2>
+<p>Depends of type of query.</p>
 
-<h2 id="requirements">REQUIREMENTS</h2>
-<p>JATE requires PHP 5.4 or higher.</p>
+<h2 id="examples">Examples</h2>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+  <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s2">"UPDATE user SET name = 'Bruce' WHERE surname = 'Wayne'"</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div>
 
         
       </section>
@@ -567,7 +553,7 @@ Recommend the use of Bootstrap4, all examples use it.<br /></p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-03-19">March 19, 2018</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-08-15">August 15, 2018</time></p>
         
       </footer>
 

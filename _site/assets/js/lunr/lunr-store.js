@@ -39,10 +39,55 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/jate-docs/download",
         "teaser":null},{
+        "title": "addConnection",
+        "excerpt":"Add connection to the page and all modules attached.void addConnection ( String $_file )ParametersA connection.json file path.Return ValuesNone.Examples&lt;?php  $this-&gt;addConnection(\"config/connection.json\");?&gt;","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/jate-docs/html-class/addConnection",
+        "teaser":null},{
+        "title": "addFiles",
+        "excerpt":"Add files to the page.void addFiles ( Array $_files )ParametersArray of path string of css and js file.Return ValuesNone.Examples&lt;?php  $this-&gt;addFiles([    \"css/myFile.css\",    \"js/myFile.js\"  ]);?&gt;","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/jate-docs/html-class/addFiles",
+        "teaser":null},{
+        "title": "addFilesRequired",
+        "excerpt":"Add files to the page before addFiles.void addFilesRequired ( Array $_files )ParametersArray of path string of css and js file.Return ValuesNone.Examples&lt;?php  $this-&gt;addFilesRequired([    \"css/myFile.css\",    \"js/myFile.js\"  ]);?&gt;","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/jate-docs/html-class/addFilesRequired",
+        "teaser":null},{
         "title": "Html-class",
         "excerpt":"Introduction Html inheriting The Html class is the main class, all models are built inheriting from it.The most important model is the Template from which all the controllers used to render the pages will be inherited.The Html class provides methods and attributes, in particular two are the most important init...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/jate-docs/html-class/list",
+        "teaser":null},{
+        "title": "draw",
+        "excerpt":"By default turns $this-&gt;template using $this-&gt;tags as parameters in to html GUI. It is not necessary overriding this function.String draw ()ParametersNone.Return ValuesString of Html.ExamplesNone.","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/jate-docs/html-class/draw",
+        "teaser":null},{
+        "title": "init",
+        "excerpt":"Is a virtual function for Html class is needed for inizialize derivate class like Template.void init ()ParametersNone.Return ValuesNone.ExamplesTypical Controller.php init.&lt;?php public function init() { parent::init(); $this-&gt;tags[\"title\"] .= \"Home\"; $this-&gt;tags[\"content\"] = $this-&gt;makePage(); }?&gt;Typical Template.php init.&lt;?php public function init() { $this-&gt;addConnection(\"config/connection.json\"); $this-&gt;addFilesRequired([ \"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\", \"https://code.jquery.com/jquery-3.2.1.slim.min.js\", \"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\", \"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\", \"css/template.css\" ]); $this-&gt;template = \"bundles/views/tradictional.jate\"; $this-&gt;tags...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/jate-docs/html-class/init",
+        "teaser":null},{
+        "title": "query",
+        "excerpt":"It makes a request to the database by the connection set in the config.json file.Before doing the queries you must be sure that you have ever made the connection through the $this-&gt;addConnection(\"config/connection.json\"); command and have enabled the connection inside the config.json file.void query ( String $_query )ParametersQuery string.Return ValuesDepends of...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/jate-docs/html-class/query",
+        "teaser":null},{
+        "title": "queryArray",
+        "excerpt":"It makes a SELECT request to the database by the connection set in the config.json file.Before doing the queries you must be sure that you have ever made the connection through the $this-&gt;addConnection(\"config/connection.json\"); command and have enabled the connection inside the config.json file.void queryArray ( String $_query )ParametersQuery string.Return ValuesArray...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/jate-docs/html-class/queryArray",
+        "teaser":null},{
+        "title": "queryFetch",
+        "excerpt":"It makes a SELECT request to the database by the connection set in the config.json file.Before doing the queries you must be sure that you have ever made the connection through the $this-&gt;addConnection(\"config/connection.json\"); command and have enabled the connection inside the config.json file.void queryFetch ( String $_query )ParametersQuery string.Return ValuesArray...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/jate-docs/html-class/queryFetch",
+        "teaser":null},{
+        "title": "queryInsert",
+        "excerpt":"It makes a INSERT request to the database by the connection set in the config.json file.Before doing the queries you must be sure that you have ever made the connection through the $this-&gt;addConnection(\"config/connection.json\"); command and have enabled the connection inside the config.json file.void queryInsert ( String $_query )ParametersQuery string.Return ValuesLast...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/jate-docs/html-class/queryInsert",
         "teaser":null},{
         "title": "Insert page",
         "excerpt":"To create the page we do the same as before, we add [\"/heros/insert\", \"Insert\", []],and&lt;li class=\"nav-item\"&gt; &lt;a class=\"nav-link\" href=\"heros/insert\"&gt;insert&lt;/a&gt;&lt;/li&gt;and then we create the bundles/models/Insert.php file with the following code:&lt;?php class Insert extends Template { public function init() { parent::init(); $this-&gt;tags[\"title\"] .= \"Insert\"; $this-&gt;tags[\"content\"] = \"&lt;div&gt;Hello world!&lt;/div&gt;\"; } }?&gt;Let’s create this...","categories": [],

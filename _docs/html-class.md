@@ -28,6 +28,7 @@ Each controller that inherits the _Template_ will have to call up the parent's _
 - addConnection
 - query
 - queryFetch
+- queryArray
 - queryInsert
 
 ## Attributes
