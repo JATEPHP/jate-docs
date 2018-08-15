@@ -7,7 +7,7 @@ toc: false
 ---
 
 To enable the connection to the database, set `"enable":true` and fill the other fields.<br>
-Only one engine can be selected at the same time, especially the _pdo_ entry uses a mysql connection using pdo.
+Only one engine can be selected at the same time.
 ```json
 {
   "enable":    false,
@@ -16,10 +16,11 @@ Only one engine can be selected at the same time, especially the _pdo_ entry use
   "database":  "",
   "server":    "",
   "engine": {
-    "pdo":        true,
-    "mysqli":     false,
-    "postgresql": false
+    "pdo-mysql":         true,
+    "pdo-sqlite-memory": false,
+    "pdo-sqlite-file":   false,
+    "mysqli":            false,
+    "postgresql":        false
   }
 }
-
 ```
