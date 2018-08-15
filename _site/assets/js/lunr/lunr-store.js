@@ -57,7 +57,7 @@ var store = [{
         "title": "Html-class",
         "excerpt":"Introduction Html inheriting The Html class is the main class, all models are built inheriting from it.The most important model is the Template from which all the controllers used to render the pages will be inherited.The Html class provides methods and attributes, in particular two are the most important init...","categories": [],
         "tags": [],
-        "url": "http://localhost:4000/jate-docs/html-class/list",
+        "url": "http://localhost:4000/jate-docs/html-class/introduction",
         "teaser":null},{
         "title": "draw",
         "excerpt":"By default turns $this-&gt;template using $this-&gt;tags as parameters in to html GUI. It is not necessary overriding this function.String draw ()ParametersNone.Return ValuesString of Html.ExamplesNone.","categories": [],

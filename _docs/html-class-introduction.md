@@ -1,6 +1,6 @@
 ---
 title: "Html-class"
-permalink: /html-class/list
+permalink: /html-class/introduction
 excerpt: "html-class."
 last_modified_at: 2018-08-05T16:28:04-05:00
 toc: false

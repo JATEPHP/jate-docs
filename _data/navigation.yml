@@ -53,8 +53,8 @@ docs:
         url: /functions/jrequire
   - title: Html-class
     children:
-      - title: "List"
-        url: /html-class/list
+      - title: "Introduction"
+        url: /html-class/introduction
       - title: "init"
         url: /html-class/init
       - title: "draw"
